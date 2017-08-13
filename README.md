@@ -6,7 +6,16 @@ It is an serverless project built upon `React Native` and `Redux`, however it us
 
 ##Installation
 
-You should have installed Android studio
+You should have installed Android studio and a Firebase account
+Create a FirebaseConfig.js file with the Firebase config variables, like so:
+export default const config = {
+  apiKey: 'xxxxxxx',
+  authDomain: 'xxxx',
+  databaseURL: 'xxxxxx',
+  projectId: 'xxxx',
+  storageBucket: '',
+  messagingSenderId: 'xxxx'
+};
 
 `npm install`
 
@@ -27,7 +36,7 @@ Build the app
 
 ## Authors
 
-* [Josep Otal](http://github.com/josepotal) 
+* [Josep Otal](http://github.com/josepotal)
 
 ## License
 

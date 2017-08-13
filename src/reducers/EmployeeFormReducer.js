@@ -1,7 +1,8 @@
 import {
   EMPLOYEE_UPDATE,
   EMPLOYEE_CREATE,
-  EMPLOYEES_FETCH_SUCCESS
+  EMPLOYEES_FETCH_SUCCESS,
+  EMPLOYEE_SAVE_SUCCESS
 } from '../actions/types';
 
 const initialState = {
@@ -21,10 +22,8 @@ export default (state = initialState, action) => {
       };
     case EMPLOYEE_CREATE:
       return initialState;
-    case EMPLOYEES_FETCH_SUCCESS:
-      return {
-
-      };
+    case EMPLOYEE_SAVE_SUCCESS:
+      return initialState;
     default:
       return state;
   }
